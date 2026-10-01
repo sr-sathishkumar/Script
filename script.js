@@ -70,6 +70,5 @@ switch (grade) {
         remark = 'Invalid grade';
 }
 console.log('Mark:', mark);
-console.log('Grade:', grade);
 console.log('Result:', result);
 console.log('Remark:', remark);
