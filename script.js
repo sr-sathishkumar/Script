@@ -24,7 +24,7 @@
 
 
 // store student mark
-let mark = 66;
+let mark = 44;
 
 // add bouns mark
 mark += 5;
@@ -33,23 +33,19 @@ mark += 5;
 let grade;
 if (mark >= 90 && mark <= 100) {
     grade = 'A';
-    console.log('Grade: A');
 }
 else if (mark >= 70 && mark < 89) { 
     grade = 'B';
-    console.log('Grade: B');
 }
 else if (mark >= 50 && mark < 69) {
     grade = 'C';
-    console.log('Grade: C');
 }
 else {
-    console.log('Grade: F');
+    grade = 'F';
 }
 
 // pass or fail using ternary operator
 let result = (mark >= 50) ? 'Pass' : 'Fail';
-console.log('Result:', result);
 
 // grade using switch case
 let remark;
@@ -64,10 +60,12 @@ switch (grade) {
         remark = 'Average';
         break;
     case 'F':
-        remark = 'needs Improvement';
+        remark = 'Needs Improvement';
         break;
     default:
         remark = 'Invalid grade';
 }
 console.log('Mark:', mark);
+console.log('Grade:', grade);
+console.log('Result:', result);
 console.log('Remark:', remark);
